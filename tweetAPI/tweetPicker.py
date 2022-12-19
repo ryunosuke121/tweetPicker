@@ -41,7 +41,6 @@ def main(tweetID):
     for tweet in json_response["data"]:
             tweet_texts.append(tweet['text'])
     #print(newData)
-    result_text = json.dumps(tweet_texts, indent=4, sort_keys=True, ensure_ascii=False)
-    print(result_text)
-if __name__ == "__main__":
-    main(1602967982614847490)
+    #result_text = json.dumps(tweet_texts, indent=4, sort_keys=True, ensure_ascii=False)
+    #print(result_text)
+    return tweet_texts
